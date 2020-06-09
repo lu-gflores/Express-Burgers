@@ -6,11 +6,21 @@
     </div>
     <div class="row">
         <div class="col-md">
-            <ol>
+            <ol class="list-group">
                 {{#each burgers}}
                 {{#unless devoured}}
-                <li><p>{{id}}, {{burger}} <button class="btn btn-secondary">Devour</button></p></li>
+                <li class="list-group-item"><p>{{id}}, {{burger}} <button type="submit" class="btn btn-secondary">Devour</button></p></li>
+                {{/unless}}
                 {{/each}}
+            </ol>
+        </div>
+        <div class="col-md">
+            <ol class="list-group">
+            {{#each burgers}}
+            {{#if devoured}}
+            <li class="list-group-item"><p>{{id}}, {{burger}}</p></li>
+            {{/if}}
+            {{/each}}
             </ol>
         </div>
     </div>
@@ -18,7 +28,7 @@
     <form action="" class="create-form">
         <label for="createBurger"></label>
         <textarea class="form-control" rows="3"></textarea>
-        <button type="submit" class="btn btn-primary"></button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 </div>
