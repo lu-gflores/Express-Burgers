@@ -1,0 +1,25 @@
+{
+  "name": "express-burgers",
+  "version": "1.0.0",
+  "description": "packages for server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lu-gflores/Express-Burgers.git"
+  },
+  "author": "lu-gflores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lu-gflores/Express-Burgers/issues"
+  },
+  "homepage": "https://github.com/lu-gflores/Express-Burgers#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
