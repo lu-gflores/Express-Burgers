@@ -1,5 +1,5 @@
 const connection = require('./connection.js');
-const printQuestMarks = num =>{
+var printQuestMarks = num =>{
     let arr = [];
     for(let i = 0; i < num; i++) {
         arr.push("?");
@@ -7,7 +7,7 @@ const printQuestMarks = num =>{
     return arr.toString();
 }
 
-const objToSql = ob => {
+var objToSql = ob => {
     let arr = [];
     for (let key in ob) {
       let value = ob[key];    
@@ -22,9 +22,9 @@ const objToSql = ob => {
     return arr.toString();
   }
 
-const orm = {    
+var orm = {    
     selectAll: function(tableInput, cb) {
-        const queryString = "SELECT * FROM " + tableInput + ";";
+        let queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, (err, result) => {
             if(err) throw err;
             cb(result);
@@ -32,10 +32,11 @@ const orm = {
         
     },
     insertOne: function(table, cols, vals, cb) {
-        const queryString = "INSERT INTO " + table;
-        queryString += "(";
+        let queryString = "INSERT INTO " + table;
+        queryString += " (";
         queryString += cols.toString();
         queryString += ") ";
+        queryString += "VALUES (";
         queryString += printQuestMarks(vals.length);
         queryString += ") ";
         

@@ -13,7 +13,7 @@
                 <li class="list-group-item">
                     <p>
                         {{id}}. {{burger_name}}
-                        <button type="submit" class="btn btn-secondary float-right">Devour</button>
+                        <button type="submit" data-newDevour="{{devoured}}" data-id="{{id}}" id="devour-burger" class="btn btn-secondary float-right">Devour</button>
                     </p>
                 </li>
                 {{/unless}}
@@ -26,7 +26,7 @@
                 {{#each burgers}}
                 {{#if devoured}}
                 <li class="list-group-item">
-                    <p>{{id}}, {{burger}}</p>
+                    <p>{{id}}. {{burger}}</p>
                 </li>
                 {{/if}}
                 {{/each}}
@@ -35,9 +35,9 @@
     </div>
 
     <form class="create-form">
-        <label for="createBurger"></label>
-        <textarea class="form-control" rows="3"></textarea>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <label for="createBurger">Create your burger here!</label>
+        <input type="text" class="form-control" id="createBurger"  aria-describedby="inputGroup-sizing-default">
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
     </form>
 
 </div>
