@@ -1,8 +1,8 @@
 const orm = require('../config/orm.js');
 
-const burgers = {
+const burger = {
 
 }
 
 
-module.exports = burgers;
+module.exports = burger;
