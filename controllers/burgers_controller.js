@@ -4,7 +4,7 @@ const router = express.Router();
 
 //routes
 router.get('/', (req, res) =>{
-    burger.all(function(data) {
+    burger.selectAll(function(data) {
         let hbsObject = {
             burgers: data
         };
