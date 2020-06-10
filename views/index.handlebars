@@ -4,6 +4,9 @@
             <h1 class="display-4 text-center">Eat A Burger Or Create Your Own!</h1>
         </div>
     </div>
+    <div class="text-center">
+     <img src="/assets/img/burger.jpg" alt="Image of a pixel burger">
+    </div>
     <div class="row">
         <div class="col-md">
             <ol class="list-group">
@@ -13,7 +16,7 @@
                 <li class="list-group-item">
                     <p>
                         {{id}}. {{burger_name}}
-                        <button type="submit" data-newDevour="{{devoured}}" data-id="{{id}}" id="devour-burger" class="btn btn-secondary float-right">Devour</button>
+                        <button type="submit" data-newdevour="{{devoured}}" data-id="{{id}}" class="btn btn-secondary float-right">Devour</button>
                     </p>
                 </li>
                 {{/unless}}

@@ -15,14 +15,13 @@ $(function () {
         });
     });
     //change state of burger 
-    $('#devour-burger').on("click", function(event) {
+    $('.btn').on("click", function(event) {
         let id = $(this).data("id");
-        let newDevour = $(this).data("newDevour");
+        let newDevour = $(this).data("newdevour");
 
         let newBurgerState = {
-            devoured: "true"
+            devoured: true
         }
-
         $.ajax("/api/burgers/" + id, {
             type:"PUT",
             data: newBurgerState
