@@ -20,7 +20,7 @@ $(function () {
         let newDevour = $(this).data("newDevour");
 
         let newBurgerState = {
-            devoured: newDevour
+            devoured: "true"
         }
 
         $.ajax("/api/burgers/" + id, {
@@ -31,7 +31,5 @@ $(function () {
             location.reload();
         })
     })
-
-
 
 })
