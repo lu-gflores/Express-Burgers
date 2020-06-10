@@ -15,7 +15,7 @@ $(function () {
         });
     });
     //change state of burger 
-    $('.btn').on("click", function(event) {
+    $('.devour-burger').on("click", function(event) {
         let id = $(this).data("id");
         let newDevour = $(this).data("newdevour");
 

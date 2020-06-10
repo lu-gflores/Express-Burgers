@@ -16,7 +16,7 @@
                 <li class="list-group-item">
                     <p>
                         {{id}}. {{burger_name}}
-                        <button type="submit" data-newdevour="{{devoured}}" data-id="{{id}}" class="btn btn-secondary float-right">Devour</button>
+                        <button data-newdevour="{{devoured}}" data-id="{{id}}" class="devour-burger btn btn-secondary float-right">Devour</button>
                     </p>
                 </li>
                 {{/unless}}
@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <form class="create-form">
+    <form class="create-form mb-3">
         <label for="createBurger">Create your burger here!</label>
         <input type="text" class="form-control" id="createBurger"  aria-describedby="inputGroup-sizing-default">
         <button type="submit" class="btn btn-primary mt-2">Submit</button>
