@@ -5,7 +5,7 @@
 ## Description
 In this project, I created a burger logger following the Model, View, Controller formula (MVC). A user can input a name of a burger which is logged in the menu list to which the user can click Devour which will then be logged in the Devoured list. 
 
-Deployed Link: 
+Deployed Link: https://intense-garden-24339.herokuapp.com/
 
 ## Resources Used
 * MySQL 
